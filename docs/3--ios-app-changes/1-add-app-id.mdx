@@ -1,0 +1,31 @@
+
+# Add an App id
+
+## App id
+
+In the App, we'll add a reference to the Atlas Services App we've created before. In App Services, [find and copy the App ID](/docs/app-services/create-a-new-app#app-id).
+
+```swift title='GoodHabitsRealmApp.swift' 
+    let app: RealmSwift.App? = RealmSwift.App(id: "My App Id")
+```
+
+## SyncContentView
+
+To wait for the connection, do login, etc. we'll use a view that will take care of the different connection states our app will have. This View is called [`SyncContentView`](/docs/app-startup/synccontentview), son we'll show that on App Startup.
+
+```swift title='GoodHabitsRealmApp.swift' 
+import SwiftUI
+import RealmSwift
+
+@main
+struct GoodHabitsRealmAppApp: SwiftUI.App {
+
+    let app: RealmSwift.App? = RealmSwift.App(id: "My App Id")
+
+    var body: some Scene {
+        WindowGroup {
+            SyncContentView(app: app!)
+        }
+    }
+}
+```

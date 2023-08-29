@@ -1,0 +1,51 @@
+# SyncContentView
+
+## Create SyncContentView
+
+This view observes the Realm app object. Either directs the user to login, or opens a realm with a logged-in user.
+
+The 1st time we open the app there is no logged in user, so we'll check `app.currentUser` and show the `ProgressView`. This `ProgressView` will run an async task to `await` our app to login, using the Atlas App. Here we use `.anonymous` authentication, although we have several other ways to do authentication (configurable in Atlas).
+
+Once the login succeeds, there will be a user in `app.currentUser`. As we're observing changes in `app`, we'll enter the `if` part and show a "Logged In!" `Text`
+
+```swift title='SyncContentView.swift' 
+import SwiftUI
+import RealmSwift
+
+struct SyncContentView: View {
+    // Observe the Realm app object in order to react to login state changes.
+    @ObservedObject var app: RealmSwift.App
+
+    var body: some View {
+        if let user = app.currentUser {
+            // If there is a user logged in
+            Text("Logged in \(user)")
+        } else {
+            // If there is no user logged in, show the login view.
+            ProgressView()
+                .task{
+                    do {
+                        let myUser = try await app.login(credentials: .anonymous)
+                    } catch {
+                        print("\(error)")
+                    }
+                }
+        }
+    }
+}
+```
+
+## SyncContentView Preview
+
+We need to inject an App, as SyncContentView observes the Realm app object, so we create a dummy `RealmSwift.App` with no App ID.
+
+```swift title='SyncContentView.swift' 
+struct SyncContentView_Previews: PreviewProvider {
+
+    static let app: RealmSwift.App? = RealmSwift.App(id: "none")
+
+    static var previews: some View {
+        SyncContentView(app: app!)
+    }
+}
+```
