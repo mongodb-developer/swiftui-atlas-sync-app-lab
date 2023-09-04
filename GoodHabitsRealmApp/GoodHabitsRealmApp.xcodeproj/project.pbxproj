@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9927E6DC2A977596005C4D2E /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DB2A977596005C4D2E /* HabitDetailView.swift */; };
+		9927E6DE2A989059005C4D2E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DD2A989059005C4D2E /* Day.swift */; };
+		9927E6E02A9892A9005C4D2E /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DF2A9892A9005C4D2E /* Days.swift */; };
+		9927E6E22A989A44005C4D2E /* TrackDailyHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6E12A989A44005C4D2E /* TrackDailyHabitsView.swift */; };
+		99D581DE2A97621F0076396C /* GoodHabitsRealmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581DD2A97621F0076396C /* GoodHabitsRealmAppApp.swift */; };
+		99D581E02A97621F0076396C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581DF2A97621F0076396C /* MainView.swift */; };
+		99D581E22A9762230076396C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D581E12A9762230076396C /* Assets.xcassets */; };
+		99D581E52A9762230076396C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D581E42A9762230076396C /* Preview Assets.xcassets */; };
+		99D581EF2A9762230076396C /* GoodHabitsRealmAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581EE2A9762230076396C /* GoodHabitsRealmAppTests.swift */; };
+		99D581F92A9762230076396C /* GoodHabitsRealmAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581F82A9762230076396C /* GoodHabitsRealmAppUITests.swift */; };
+		99D581FB2A9762230076396C /* GoodHabitsRealmAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581FA2A9762230076396C /* GoodHabitsRealmAppUITestsLaunchTests.swift */; };
+		99D582092A9765A00076396C /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D582082A9765A00076396C /* DaysView.swift */; };
+		99D5820B2A9765C40076396C /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5820A2A9765C40076396C /* ConfigView.swift */; };
+		99D5820F2A9766AD0076396C /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 99D5820E2A9766AD0076396C /* Realm */; };
+		99D582112A9766AD0076396C /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 99D582102A9766AD0076396C /* RealmSwift */; };
+		99D582142A9766DC0076396C /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D582132A9766DC0076396C /* Habit.swift */; };
+		99D582162A9767810076396C /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D582152A9767810076396C /* Habits.swift */; };
+		99D582192A9768100076396C /* Realm+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D582182A9768100076396C /* Realm+Previews.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99D581EB2A9762230076396C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D581D22A97621F0076396C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99D581D92A97621F0076396C;
+			remoteInfo = GoodHabitsRealmApp;
+		};
+		99D581F52A9762230076396C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D581D22A97621F0076396C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99D581D92A97621F0076396C;
+			remoteInfo = GoodHabitsRealmApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9927E6DB2A977596005C4D2E /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
+		9927E6DD2A989059005C4D2E /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		9927E6DF2A9892A9005C4D2E /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
+		9927E6E12A989A44005C4D2E /* TrackDailyHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDailyHabitsView.swift; sourceTree = "<group>"; };
+		99D581DA2A97621F0076396C /* GoodHabitsRealmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabitsRealmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D581DD2A97621F0076396C /* GoodHabitsRealmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodHabitsRealmAppApp.swift; sourceTree = "<group>"; };
+		99D581DF2A97621F0076396C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		99D581E12A9762230076396C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99D581E42A9762230076396C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99D581EA2A9762230076396C /* GoodHabitsRealmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodHabitsRealmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D581EE2A9762230076396C /* GoodHabitsRealmAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodHabitsRealmAppTests.swift; sourceTree = "<group>"; };
+		99D581F42A9762230076396C /* GoodHabitsRealmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodHabitsRealmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D581F82A9762230076396C /* GoodHabitsRealmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodHabitsRealmAppUITests.swift; sourceTree = "<group>"; };
+		99D581FA2A9762230076396C /* GoodHabitsRealmAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodHabitsRealmAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		99D582082A9765A00076396C /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
+		99D5820A2A9765C40076396C /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		99D582132A9766DC0076396C /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		99D582152A9767810076396C /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		99D582182A9768100076396C /* Realm+Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Previews.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99D581D72A97621F0076396C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D582112A9766AD0076396C /* RealmSwift in Frameworks */,
+				99D5820F2A9766AD0076396C /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D581E72A9762230076396C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D581F12A9762230076396C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99D581D12A97621F0076396C = {
+			isa = PBXGroup;
+			children = (
+				99D581DC2A97621F0076396C /* GoodHabitsRealmApp */,
+				99D581ED2A9762230076396C /* GoodHabitsRealmAppTests */,
+				99D581F72A9762230076396C /* GoodHabitsRealmAppUITests */,
+				99D581DB2A97621F0076396C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99D581DB2A97621F0076396C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D581DA2A97621F0076396C /* GoodHabitsRealmApp.app */,
+				99D581EA2A9762230076396C /* GoodHabitsRealmAppTests.xctest */,
+				99D581F42A9762230076396C /* GoodHabitsRealmAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D581DC2A97621F0076396C /* GoodHabitsRealmApp */ = {
+			isa = PBXGroup;
+			children = (
+				99D581DD2A97621F0076396C /* GoodHabitsRealmAppApp.swift */,
+				99D582072A9765840076396C /* UI */,
+				99D5820C2A97665C0076396C /* Model */,
+				99D582172A9767F70076396C /* Util */,
+				99D581E12A9762230076396C /* Assets.xcassets */,
+				99D581E32A9762230076396C /* Preview Content */,
+			);
+			path = GoodHabitsRealmApp;
+			sourceTree = "<group>";
+		};
+		99D581E32A9762230076396C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				99D581E42A9762230076396C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		99D581ED2A9762230076396C /* GoodHabitsRealmAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				99D581EE2A9762230076396C /* GoodHabitsRealmAppTests.swift */,
+			);
+			path = GoodHabitsRealmAppTests;
+			sourceTree = "<group>";
+		};
+		99D581F72A9762230076396C /* GoodHabitsRealmAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99D581F82A9762230076396C /* GoodHabitsRealmAppUITests.swift */,
+				99D581FA2A9762230076396C /* GoodHabitsRealmAppUITestsLaunchTests.swift */,
+			);
+			path = GoodHabitsRealmAppUITests;
+			sourceTree = "<group>";
+		};
+		99D582072A9765840076396C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				99D581DF2A97621F0076396C /* MainView.swift */,
+				99D582082A9765A00076396C /* DaysView.swift */,
+				99D5820A2A9765C40076396C /* ConfigView.swift */,
+				9927E6DB2A977596005C4D2E /* HabitDetailView.swift */,
+				9927E6E12A989A44005C4D2E /* TrackDailyHabitsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		99D5820C2A97665C0076396C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99D582132A9766DC0076396C /* Habit.swift */,
+				99D582152A9767810076396C /* Habits.swift */,
+				9927E6DD2A989059005C4D2E /* Day.swift */,
+				9927E6DF2A9892A9005C4D2E /* Days.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99D582172A9767F70076396C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				99D582182A9768100076396C /* Realm+Previews.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99D581D92A97621F0076396C /* GoodHabitsRealmApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99D581FE2A9762230076396C /* Build configuration list for PBXNativeTarget "GoodHabitsRealmApp" */;
+			buildPhases = (
+				99D581D62A97621F0076396C /* Sources */,
+				99D581D72A97621F0076396C /* Frameworks */,
+				99D581D82A97621F0076396C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodHabitsRealmApp;
+			packageProductDependencies = (
+				99D5820E2A9766AD0076396C /* Realm */,
+				99D582102A9766AD0076396C /* RealmSwift */,
+			);
+			productName = GoodHabitsRealmApp;
+			productReference = 99D581DA2A97621F0076396C /* GoodHabitsRealmApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99D581E92A9762230076396C /* GoodHabitsRealmAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99D582012A9762230076396C /* Build configuration list for PBXNativeTarget "GoodHabitsRealmAppTests" */;
+			buildPhases = (
+				99D581E62A9762230076396C /* Sources */,
+				99D581E72A9762230076396C /* Frameworks */,
+				99D581E82A9762230076396C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99D581EC2A9762230076396C /* PBXTargetDependency */,
+			);
+			name = GoodHabitsRealmAppTests;
+			productName = GoodHabitsRealmAppTests;
+			productReference = 99D581EA2A9762230076396C /* GoodHabitsRealmAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99D581F32A9762230076396C /* GoodHabitsRealmAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99D582042A9762230076396C /* Build configuration list for PBXNativeTarget "GoodHabitsRealmAppUITests" */;
+			buildPhases = (
+				99D581F02A9762230076396C /* Sources */,
+				99D581F12A9762230076396C /* Frameworks */,
+				99D581F22A9762230076396C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99D581F62A9762230076396C /* PBXTargetDependency */,
+			);
+			name = GoodHabitsRealmAppUITests;
+			productName = GoodHabitsRealmAppUITests;
+			productReference = 99D581F42A9762230076396C /* GoodHabitsRealmAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99D581D22A97621F0076396C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					99D581D92A97621F0076396C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					99D581E92A9762230076396C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 99D581D92A97621F0076396C;
+					};
+					99D581F32A9762230076396C = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 99D581D92A97621F0076396C;
+					};
+				};
+			};
+			buildConfigurationList = 99D581D52A97621F0076396C /* Build configuration list for PBXProject "GoodHabitsRealmApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99D581D12A97621F0076396C;
+			packageReferences = (
+				99D5820D2A9766AD0076396C /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 99D581DB2A97621F0076396C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99D581D92A97621F0076396C /* GoodHabitsRealmApp */,
+				99D581E92A9762230076396C /* GoodHabitsRealmAppTests */,
+				99D581F32A9762230076396C /* GoodHabitsRealmAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99D581D82A97621F0076396C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D581E52A9762230076396C /* Preview Assets.xcassets in Resources */,
+				99D581E22A9762230076396C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D581E82A9762230076396C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D581F22A9762230076396C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99D581D62A97621F0076396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D5820B2A9765C40076396C /* ConfigView.swift in Sources */,
+				99D582142A9766DC0076396C /* Habit.swift in Sources */,
+				9927E6E22A989A44005C4D2E /* TrackDailyHabitsView.swift in Sources */,
+				99D582162A9767810076396C /* Habits.swift in Sources */,
+				99D581E02A97621F0076396C /* MainView.swift in Sources */,
+				99D582092A9765A00076396C /* DaysView.swift in Sources */,
+				9927E6DE2A989059005C4D2E /* Day.swift in Sources */,
+				9927E6E02A9892A9005C4D2E /* Days.swift in Sources */,
+				99D582192A9768100076396C /* Realm+Previews.swift in Sources */,
+				9927E6DC2A977596005C4D2E /* HabitDetailView.swift in Sources */,
+				99D581DE2A97621F0076396C /* GoodHabitsRealmAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D581E62A9762230076396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D581EF2A9762230076396C /* GoodHabitsRealmAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D581F02A9762230076396C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D581FB2A9762230076396C /* GoodHabitsRealmAppUITestsLaunchTests.swift in Sources */,
+				99D581F92A9762230076396C /* GoodHabitsRealmAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99D581EC2A9762230076396C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99D581D92A97621F0076396C /* GoodHabitsRealmApp */;
+			targetProxy = 99D581EB2A9762230076396C /* PBXContainerItemProxy */;
+		};
+		99D581F62A9762230076396C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99D581D92A97621F0076396C /* GoodHabitsRealmApp */;
+			targetProxy = 99D581F52A9762230076396C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99D581FC2A9762230076396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99D581FD2A9762230076396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99D581FF2A9762230076396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodHabitsRealmApp/Preview Content\"";
+				DEVELOPMENT_TEAM = BGTGP4V6AC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.GoodHabitsRealmApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99D582002A9762230076396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodHabitsRealmApp/Preview Content\"";
+				DEVELOPMENT_TEAM = BGTGP4V6AC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.GoodHabitsRealmApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99D582022A9762230076396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGTGP4V6AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.GoodHabitsRealmAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodHabitsRealmApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoodHabitsRealmApp";
+			};
+			name = Debug;
+		};
+		99D582032A9762230076396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGTGP4V6AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.GoodHabitsRealmAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodHabitsRealmApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoodHabitsRealmApp";
+			};
+			name = Release;
+		};
+		99D582052A9762230076396C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGTGP4V6AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.GoodHabitsRealmAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodHabitsRealmApp;
+			};
+			name = Debug;
+		};
+		99D582062A9762230076396C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGTGP4V6AC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mongodb.GoodHabitsRealmAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodHabitsRealmApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99D581D52A97621F0076396C /* Build configuration list for PBXProject "GoodHabitsRealmApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D581FC2A9762230076396C /* Debug */,
+				99D581FD2A9762230076396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99D581FE2A9762230076396C /* Build configuration list for PBXNativeTarget "GoodHabitsRealmApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D581FF2A9762230076396C /* Debug */,
+				99D582002A9762230076396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99D582012A9762230076396C /* Build configuration list for PBXNativeTarget "GoodHabitsRealmAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D582022A9762230076396C /* Debug */,
+				99D582032A9762230076396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99D582042A9762230076396C /* Build configuration list for PBXNativeTarget "GoodHabitsRealmAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D582052A9762230076396C /* Debug */,
+				99D582062A9762230076396C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99D5820D2A9766AD0076396C /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99D5820E2A9766AD0076396C /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99D5820D2A9766AD0076396C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		99D582102A9766AD0076396C /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99D5820D2A9766AD0076396C /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 99D581D22A97621F0076396C /* Project object */;
+}
