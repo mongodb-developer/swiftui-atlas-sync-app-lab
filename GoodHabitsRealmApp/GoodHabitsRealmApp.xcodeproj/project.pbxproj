@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99271B492AA5D09200EEA719 /* SyncContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99271B482AA5D09200EEA719 /* SyncContentView.swift */; };
+		99271B4B2AA5D9C700EEA719 /* OpenSyncedRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99271B4A2AA5D9C700EEA719 /* OpenSyncedRealmView.swift */; };
 		9927E6DC2A977596005C4D2E /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DB2A977596005C4D2E /* HabitDetailView.swift */; };
 		9927E6DE2A989059005C4D2E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DD2A989059005C4D2E /* Day.swift */; };
 		9927E6E02A9892A9005C4D2E /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DF2A9892A9005C4D2E /* Days.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99271B482AA5D09200EEA719 /* SyncContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncContentView.swift; sourceTree = "<group>"; };
+		99271B4A2AA5D9C700EEA719 /* OpenSyncedRealmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSyncedRealmView.swift; sourceTree = "<group>"; };
 		9927E6DB2A977596005C4D2E /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 		9927E6DD2A989059005C4D2E /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		9927E6DF2A9892A9005C4D2E /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				99D581DD2A97621F0076396C /* GoodHabitsRealmAppApp.swift */,
+				99271B482AA5D09200EEA719 /* SyncContentView.swift */,
+				99271B4A2AA5D9C700EEA719 /* OpenSyncedRealmView.swift */,
 				99D582072A9765840076396C /* UI */,
 				99D5820C2A97665C0076396C /* Model */,
 				99D582172A9767F70076396C /* Util */,
@@ -325,7 +331,9 @@
 				99D582162A9767810076396C /* Habits.swift in Sources */,
 				99D581E02A97621F0076396C /* MainView.swift in Sources */,
 				99D582092A9765A00076396C /* DaysView.swift in Sources */,
+				99271B4B2AA5D9C700EEA719 /* OpenSyncedRealmView.swift in Sources */,
 				9927E6DE2A989059005C4D2E /* Day.swift in Sources */,
+				99271B492AA5D09200EEA719 /* SyncContentView.swift in Sources */,
 				9927E6E02A9892A9005C4D2E /* Days.swift in Sources */,
 				99D582192A9768100076396C /* Realm+Previews.swift in Sources */,
 				9927E6DC2A977596005C4D2E /* HabitDetailView.swift in Sources */,

@@ -10,6 +10,9 @@ import RealmSwift
 
 @main
 struct GoodHabitsRealmAppApp: SwiftUI.App {
+
+    let app: RealmSwift.App? = RealmSwift.App(id: "application-0-zvmvf")
+
     var config = Realm.Configuration.defaultConfiguration
 
     init() {
@@ -18,8 +21,9 @@ struct GoodHabitsRealmAppApp: SwiftUI.App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environment(\.realmConfiguration, config)
+            SyncContentView(app: app!)
+//            MainView()
+//                .environment(\.realmConfiguration, config)
         }
     }
 }
