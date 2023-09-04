@@ -1,0 +1,30 @@
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Adding ownerId
+
+We need to add our user id to the data we're about to sync to our App in the cloud. This way we'll be able to download it later if we need it.
+
+So in `MainView`, when we create our list of `Habits`, we need to set the `ownerId` to the current log in user:
+
+We 1st get our `realm` from the environment:
+
+
+```swift title="MainView.swift"
+    @Environment(\.realm) var realm
+```
+
+And then we use it to get the current log-in user id.
+
+```swift title="MainView.swift"
+    // ...
+    if let habits = allHabitGroups.first {
+            // ...
+        } else {
+            ProgressView()
+                .onAppear {
+                    let habits = Habits()
+                    habits.ownerId = realm.syncSession?.parentUser()?.id ?? ""
+                    $allHabitGroups.append(habits)
+                }
+        }
+```

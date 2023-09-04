@@ -129,7 +129,7 @@ const config = {
       },
       navbar: {
         logo: {
-          alt: "MongoDB Logo",
+          alt: `${title}`,
           src: "img/logo.svg",
           srcDark: "img/logo-dark.svg",
           className: "navbar-logo",

@@ -4,7 +4,34 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Las thing we need to do is to pass this information to a new view, `OpenSyncedRealmView`, that will open the connection with our App and go through all the states needed while logging in our app.
 
-```swift
+## Create OpenSyncedRealmView
+
+Create a new SwiftUI view, add an `app` property. We'll need to add that argument to the preview call.
+
+```swift title="OpenSyncedRealmView"
+import SwiftUI
+import RealmSwift
+
+struct OpenSyncedRealmView: View {
+    @ObservedObject var app: RealmSwift.App
+
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+
+struct OpenSyncedRealmView_Previews: PreviewProvider {
+    static var previews: some View {
+        OpenSyncedRealmView(app: RealmSwift.App(id: ""))
+    }
+}
+```
+
+## Using our config 
+
+We'll use our `config` in place of the default environment `\.realmConfiguration`.
+
+```swift title="SyncContentView.swift"
 // Remove this
 //            Text("Logged in \(user)")
 
@@ -69,4 +96,15 @@ struct SyncContentView: View {
         }
     }
 }
+```
+
+## Log
+
+If you look at the logs you'll see messages like
+
+```
+2023-07-05 17:59:39.708589+0200 GoodHabitsRealmApp[71190:9845203] Sync: Connection[1]: Session[1]: client_reset_config = false, Realm exists = true, client reset = false
+2023-07-05 17:59:39.928362+0200 GoodHabitsRealmApp[71190:9845203] Sync: Connected to endpoint 'redacted-ip:443' (from 'my-ip:60529')
+2023-07-05 17:59:41.038822+0200 GoodHabitsRealmApp[71190:9845203] Sync: Connection[1]: Connected to app services with request id: "64ah936ca2df64d089058fe9"
+2023-07-05 17:59:41.648668+0200 GoodHabitsRealmApp[71190:9845203] Sync: Connection[1]: Session[1]: Begin processing pending FLX bootstrap for query version 0. (changesets: 1, original total changeset size: 0)
 ```

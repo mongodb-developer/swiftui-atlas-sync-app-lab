@@ -15,9 +15,7 @@ struct OpenSyncedRealmView: View {
     // We've injected a `flexibleSyncConfiguration` as an environment value,
     // so `@AsyncOpen` here opens a realm using that configuration.
     @AsyncOpen(appId: nil, timeout: 4000) var asyncOpen
-
-    @ObservedResults(Days.self) var allPlaces
-
+    
     var body: some View {
         // Because we are setting the `ownerId` to the `user.id`, we need
         // access to the app's current user in this view.
@@ -36,8 +34,8 @@ struct OpenSyncedRealmView: View {
         case .open(let realm):
             MainView()
             .environment(\.realm, realm)
-            // The realm is currently being downloaded from the server.
-            // Show a progress view.
+        // The realm is currently being downloaded from the server.
+        // Show a progress view.
         case .progress(let progress):
             ProgressView(progress)
         // Opening the Realm failed.
