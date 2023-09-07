@@ -11,7 +11,6 @@
 		99271B4B2AA5D9C700EEA719 /* OpenSyncedRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99271B4A2AA5D9C700EEA719 /* OpenSyncedRealmView.swift */; };
 		9927E6DC2A977596005C4D2E /* HabitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DB2A977596005C4D2E /* HabitDetailView.swift */; };
 		9927E6DE2A989059005C4D2E /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DD2A989059005C4D2E /* Day.swift */; };
-		9927E6E02A9892A9005C4D2E /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6DF2A9892A9005C4D2E /* Days.swift */; };
 		9927E6E22A989A44005C4D2E /* TrackDailyHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9927E6E12A989A44005C4D2E /* TrackDailyHabitsView.swift */; };
 		99D581DE2A97621F0076396C /* GoodHabitsRealmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581DD2A97621F0076396C /* GoodHabitsRealmAppApp.swift */; };
 		99D581E02A97621F0076396C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D581DF2A97621F0076396C /* MainView.swift */; };
@@ -51,7 +50,6 @@
 		99271B4A2AA5D9C700EEA719 /* OpenSyncedRealmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSyncedRealmView.swift; sourceTree = "<group>"; };
 		9927E6DB2A977596005C4D2E /* HabitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailView.swift; sourceTree = "<group>"; };
 		9927E6DD2A989059005C4D2E /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		9927E6DF2A9892A9005C4D2E /* Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		9927E6E12A989A44005C4D2E /* TrackDailyHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDailyHabitsView.swift; sourceTree = "<group>"; };
 		99D581DA2A97621F0076396C /* GoodHabitsRealmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodHabitsRealmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D581DD2A97621F0076396C /* GoodHabitsRealmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodHabitsRealmAppApp.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 				99D582132A9766DC0076396C /* Habit.swift */,
 				99D582152A9767810076396C /* Habits.swift */,
 				9927E6DD2A989059005C4D2E /* Day.swift */,
-				9927E6DF2A9892A9005C4D2E /* Days.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 				99271B4B2AA5D9C700EEA719 /* OpenSyncedRealmView.swift in Sources */,
 				9927E6DE2A989059005C4D2E /* Day.swift in Sources */,
 				99271B492AA5D09200EEA719 /* SyncContentView.swift in Sources */,
-				9927E6E02A9892A9005C4D2E /* Days.swift in Sources */,
 				99D582192A9768100076396C /* Realm+Previews.swift in Sources */,
 				9927E6DC2A977596005C4D2E /* HabitDetailView.swift in Sources */,
 				99D581DE2A97621F0076396C /* GoodHabitsRealmAppApp.swift in Sources */,

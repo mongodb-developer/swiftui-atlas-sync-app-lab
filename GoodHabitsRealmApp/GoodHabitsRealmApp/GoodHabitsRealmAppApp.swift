@@ -11,7 +11,7 @@ import RealmSwift
 @main
 struct GoodHabitsRealmAppApp: SwiftUI.App {
 
-    let app: RealmSwift.App? = RealmSwift.App(id: "application-0-zvmvf")
+    let app: RealmSwift.App? = RealmSwift.App(id: "devicesync-ysheg")
 
     var config = Realm.Configuration.defaultConfiguration
 

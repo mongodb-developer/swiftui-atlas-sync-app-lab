@@ -30,6 +30,7 @@ struct DaysView: View {
                     Button(action: {
                         let day = Day.createDayWithHabitsInRealm(realm: realm)
 
+                        day.ownerId = realm.syncSession?.parentUser()?.id ?? ""
                         try? realm.write({
                             $days.append(day)
                         })

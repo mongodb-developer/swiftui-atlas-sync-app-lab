@@ -10,6 +10,7 @@ import RealmSwift
 
 struct MainView: View {
     @ObservedResults(Habits.self) var allHabitGroups
+    @Environment(\.realm) var realm
 
     var body: some View {
         if let habits = allHabitGroups.first {
@@ -28,7 +29,9 @@ struct MainView: View {
         } else {
             ProgressView()
                 .onAppear {
-                    $allHabitGroups.append(Habits())
+                    let habits = Habits()
+                    habits.ownerId = realm.syncSession?.parentUser()?.id ?? ""
+                    $allHabitGroups.append(habits)
                 }
         }
 

@@ -14,6 +14,8 @@ public class Day: Object, ObjectKeyIdentifiable {
     @Persisted var date = Date()
     @Persisted var habits = RealmSwift.List<Habit>()
 
+    @Persisted var ownerId = ""
+
     static func createDayWithHabitsInRealm(realm: Realm) -> Day {
         let day = Day()
 

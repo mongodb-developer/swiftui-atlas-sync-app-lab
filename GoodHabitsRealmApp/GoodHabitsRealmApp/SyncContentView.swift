@@ -18,10 +18,9 @@ struct SyncContentView: View {
                 if let foundSubscription = subs.first(named: "user_days") {
                     return
                 } else {
-                    subs.append(QuerySubscription<Days>(name: "user_days", query: {
+                    subs.append(QuerySubscription<Day>(name: "user_days", query: {
                         $0.ownerId == user.id
                     }))
-                    subs.append(QuerySubscription<Day>())
 
                     subs.append(QuerySubscription<Habits>(name: "user_habits", query: {
                         $0.ownerId == user.id
