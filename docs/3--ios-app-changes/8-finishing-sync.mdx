@@ -1,12 +1,8 @@
----
-sidebar_position: 2
----
-
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Fixing Sync
+# Finishing Sync
 
-The problem is that while syncing habits we're using our user id, but not while syncing our days. From the sync config code, these are the subscriptions we're adding:
+We have a problem: while syncing habits we're using our user id, but not while syncing our days. From the sync config code, these are the subscriptions we're adding:
 
 ```swift title="SyncContentView.swift"
                     subs.append(QuerySubscription<Days>(name: "user_days", query: { 
@@ -82,6 +78,17 @@ We'll delete the sync subscription on `Days` (as we just deleted that class) and
     try? realm.write({
         $days.append(day)
     })
+```
+
+## Add ownerId when creating the initial set of Habits
+
+```swift title="MainView.swift"
+    ProgressView()
+        .onAppear {
+            let habits = Habits()
+            habits.ownerId = realm.syncSession?.parentUser()?.id ?? ""
+            $allHabitGroups.append(habits)
+        }
 ```
 
 ## Testing it
