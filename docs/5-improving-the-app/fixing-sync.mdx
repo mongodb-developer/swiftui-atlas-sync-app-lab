@@ -1,0 +1,81 @@
+---
+sidebar_position: 2
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Fixing Sync
+
+The problem is that while syncing habits we're using our user id, but not while syncing our days. From the sync config code, these are the subscriptions we're adding:
+
+```swift title="SyncContentView.swift"
+                    subs.append(QuerySubscription<Days>(name: "user_days", query: { 
+                        $0.ownerId == user.id
+                    }))
+                    subs.append(QuerySubscription<Day>())
+
+                    subs.append(QuerySubscription<Habits>(name: "user_habits", query: {
+                        $0.ownerId == user.id
+                    }))
+                    subs.append(QuerySubscription<Habit>())
+```
+
+When we add a `Day` we never set the `ownerId` because our model class `Day` doesn't have it. So when we insert a new `Day` it will appear for all users, as we're getting `Day` from all users, because we're not restricting the sync here:
+
+
+```swift title="SyncContentView.swift"
+                    subs.append(QuerySubscription<Day>())
+```
+
+## Fixing the model: remove Days class
+
+Let's get rid of Days, as we don't really use that class for anything.
+
+## Add ownerId to Day class
+
+We;ll add the `ownerId` field to the Day class.
+
+```swift title="Day.swift"
+import Foundation
+import RealmSwift
+
+public class Day: Object, ObjectKeyIdentifiable {
+    @Persisted(primaryKey: true) var _id: ObjectId
+
+    @Persisted var date = Date()
+    @Persisted var habits = RealmSwift.List<Habit>()
+
+    @Persisted var ownerId = ""
+
+    // ... same as before
+```
+
+## Remove sync on Days and add sync info to Day
+
+In `SyncContentView` we'll have:
+
+```swift
+        if let foundSubscription = subs.first(named: "user_days") {
+            return
+        } else {
+            subs.append(QuerySubscription<Day>(name: "user_days", query: {
+                $0.ownerId == user.id
+            }))
+
+            subs.append(QuerySubscription<Habits>(name: "user_habits", query: {
+                $0.ownerId == user.id
+            }))
+            subs.append(QuerySubscription<Habit>())
+        }
+```
+
+## Set ownerId while creating a new Day
+
+```swift title="DaysView"
+    let day = Day.createDayWithHabitsInRealm(realm: realm)
+
+    day.ownerId = realm.syncSession?.parentUser()?.id ?? ""
+    try? realm.write({
+        $days.append(day)
+    })
+```
