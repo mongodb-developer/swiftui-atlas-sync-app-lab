@@ -87,7 +87,7 @@ const config = {
   trailingSlash: false,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.svg",
   deploymentBranch: "gh-pages",
   i18n: {
     defaultLocale: "en",
