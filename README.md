@@ -1,6 +1,6 @@
 # Build a SwiftUI App that stores data in MongoDB Atlas using Atlas Device Sync
 
-In this hands-on lab you will add to our existing habits application the hability to sync data to a MongoDB Atlas cluster. If you haven't done it yet, go to the Lab [Build a SwiftUI Realm App Workshop](https://mongodb-developer.github.io/swiftui-realm-app-workshop/)
+In this hands-on lab you will add to our existing habits application the hability to sync data to a MongoDB Atlas cluster. If you haven't done it yet, go to the Lab [SwiftUI Atlas Device SDK App Lab](https://mongodb-developer.github.io/swiftui-atlas-device-sdk-app-lab/)
 
 🚀 Try it [here](https://mongodb-developer.github.io/swiftui-atlas-sync-app-workshop/)
 
