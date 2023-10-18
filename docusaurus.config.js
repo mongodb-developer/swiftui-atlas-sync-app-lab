@@ -4,10 +4,10 @@
 // Change here to customise config
 
 // Name of the Github Repo
-const workshopName = 'swiftui-atlas-sync-app-workshop';
+const workshopName = 'swiftui-atlas-sync-app-lab';
 
 // Main page config
-const title = "SwiftUI Atlas Sync App Workshop";
+const title = "SwiftUI Atlas Sync App Lab";
 const tagLine = "Learn how to build an iOS app using SwiftUI and storing your data in MongoDB using Atlas Device Sync";
 const startButtonTitle = "Get Started 📲";
 
@@ -128,6 +128,7 @@ const config = {
         },
       },
       navbar: {
+        title: `${title}`,
         logo: {
           alt: `${title}`,
           src: "img/logo.svg",
